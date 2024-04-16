@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     background-color: antiquewhite;
 }
@@ -52,7 +56,6 @@ section {
     min-height: 100vh;
     background-color: rgb(152, 255, 152);
     display: flex;
-    box-sizing: border-box;
     position: relative;
     margin: auto;
     align-items: center;
@@ -70,10 +73,8 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-flow: row wrap;
+    right: 0;
+    padding: 10px;
 }
 
 footer > .foot-fadein  > img {
@@ -108,7 +109,6 @@ footer > .foot-fadein  > img {
 }
 
 footer > .socials {
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     display: flex;
@@ -189,6 +189,18 @@ footer > .socials > img {
         margin: 0;
         float: inline-start;
     }
+    .box-div img {
+        margin: 0;
+        float: inline-start;
+    }
+    .box-div > .class {
+        margin: 0;
+        float: inline-start;
+    }
+    .box-div > .class-two {
+        margin: 0;
+        float: inline-start;
+    }
 }
 
 .box > .box-div {
@@ -229,14 +241,54 @@ footer > .socials > img {
     padding-right: 50px;
 }
 
-@media screen and (max-width: 900px) {
-    .music-div > img {
-        margin: 0;
-        float: inline-start;
-    }
+.contact {
+    text-align: left;
+    margin: 8px;
+    font-size: 36px;
+}
 
-    .box-div > img {
-        margin: 0;
-        float: inline-start;
-    }
+.form-box {
+    background-color: antiquewhite;
+    height: 700px;
+    margin: 40px;
+    width: 80%;
+    border-radius: 15px;
+}
+
+form {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h1 {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    background-color: rgb(152, 255, 152);
+}
+
+form button:hover {
+    opacity: 0.7;
 }
