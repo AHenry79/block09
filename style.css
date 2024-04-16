@@ -1,0 +1,191 @@
+html {
+    background-color: antiquewhite;
+}
+
+body {
+    margin: 0px;
+    padding-top: 60px;
+}
+
+body > div {
+    text-align: center;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(152, 255, 152);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    z-index: 99;
+    box-shadow: 2px 2px 2px -2px black;
+}
+
+nav > div {
+    height: 100%;
+}
+
+#name > a {
+    padding-left: 8px;
+    font-size: 36px;
+    text-decoration: none;
+    color: black;
+}
+
+#links > a {
+    text-decoration: none;
+    color: black;
+    margin: 8px;
+    font-size: 20px;
+}
+
+#links > a:hover {
+    color: gray;
+    opacity: 0.7;
+}
+
+section {
+    min-height: 100vh;
+    background-color: rgb(152, 255, 152);
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    flex-grow: 2;
+    flex-basis: 300px;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px -2px black;
+    width: min(1000px, 100%);
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(152, 255, 152);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-flow: row wrap;
+}
+
+footer > .foot-fadein  > img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-grow: 2;
+    flex-basis: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.imgone {
+    height: 500px;
+    margin-bottom: 60px;
+    animation: fadeIn 1s;
+}
+
+.imgtwo {
+    margin: 60px;
+    margin-left: 250px;
+    height: 700px;
+    animation: fadeIn 3s;
+}
+
+.imgthree {
+    height: 700px;
+    margin-bottom: 20px;
+    margin-left: 1300px;
+    animation: fadeIn 5s;
+}
+
+footer > .socials {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+footer > .socials > img {
+    height: 40px;
+    padding: 5px; 
+    justify-content: end;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header h1 {
+    font-size: 56px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.para > p {
+    font-size: 24px;
+    text-align: center;
+}
+
+.quote img {
+    height: 500px;
+    margin: 12px;
+}
+
+@media screen and (max-width: 1810px) {
+    footer > .foot-fadein > img  {
+        display: none;
+    }
+}
+
+.about {
+    min-height: 100px;
+    border-bottom: solid black;
+}
+
+.music > .music-div {
+    position: relative;
+    height: 100%;
+    padding: 8px;
+}
+
+.music-div > p {
+    width: 70%;
+}
+
+.music-div > img {
+    float: right;
+    margin: -180px 24px 24px 24px;
+    flex-grow: 2;
+    flex-basis: 300px;
+}
+
+.music img {
+    height: 180px;
+}
+
+.music {
+    min-height: 290px;
+    border-bottom: solid black;
+}
+
+@media screen and (max-width: 900px) {
+    .music-div > img {
+        margin: 0;
+        float: inline-start;
+    }
+}
