@@ -31,7 +31,7 @@ nav > div {
 
 #name > a {
     padding-left: 8px;
-    font-size: 36px;
+    font-size: 30px;
     text-decoration: none;
     color: black;
 }
@@ -40,7 +40,7 @@ nav > div {
     text-decoration: none;
     color: black;
     margin: 8px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #links > a:hover {
@@ -113,6 +113,7 @@ footer > .socials {
     justify-content: space-between;
     display: flex;
     flex-flow: row wrap;
+    align-items: baseline;
 }
 
 footer > .socials > img {
@@ -197,6 +198,7 @@ footer > .socials > img {
     background-color: antiquewhite;
     padding: 8px;
     margin-bottom: 24px;
+    border-radius: 15px;
 }
 
 .box-div > p {
@@ -220,6 +222,11 @@ footer > .socials > img {
 
 .box-div > h2 {
     border-bottom: solid black;
+}
+
+.box-div > .class {
+    transform: rotate(270deg);
+    padding-right: 50px;
 }
 
 @media screen and (max-width: 900px) {
